@@ -86,7 +86,8 @@ header nav a {
 
 .hero article img {
     position: absolute;
-    float: right;
+    top: 0;
+    right: 0;
     width: 30%;
     height: auto;
 }
