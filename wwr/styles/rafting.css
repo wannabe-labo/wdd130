@@ -66,21 +66,29 @@ header nav a {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 160px;
-    color: #F3DFBF;
-    background-color: blueviolet;
+    left: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
 }
 
-.hero article img{
-    position: absolute;
-    left: 100px;
-    width: 20%;
+.hero img{
+    width: 100%;
     height: auto;
 }
 
-article p {
+.hero p {
     position: absolute;
-    top: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    bottom: 100px;
+}
+
+.hero article img {
+    position: absolute;
+    float: right;
+    width: 30%;
+    height: auto;
 }
 /*
 nav {
