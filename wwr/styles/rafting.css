@@ -9,10 +9,10 @@
     --heading-font: 'Skranji', serif;
     --paragraph-font: 'Roboto', serif;
 
-    --nav-background-color: #;
-    --nav-link-color: #;
-    --nav-hover-link-color: #;
-    --nav-hover-background-color: #;
+    --nav-background-color: #42E2B8;
+    --nav-link-color: #07004D;
+    --nav-hover-link-color: #F3DFBF;
+    --nav-hover-background-color: #2D82B7;
 }
 
 body {
@@ -26,15 +26,63 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--primary-color);
 }
 
-header {
-    padding: 20px;
-    background-color: var(--secondary-color);
-}
-
 p {
     padding: 25px;
 }
 
+html, body {
+    width: 100%;
+}
+
+/*header
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    height: 164px;
+}
+
+header img {
+    float: left;
+    margin-right: 60px;
+}
+
+header nav {
+	margin: 50px;
+	width: auto;
+	height: auto;
+}
+
+header nav a {
+    border: 1px solid #000;
+    width: 100px;
+}
+
+*/
+/*hero*/
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    color: #F3DFBF;
+    background-color: blueviolet;
+}
+
+.hero article img{
+    position: absolute;
+    left: 100px;
+    width: 20%;
+    height: auto;
+}
+
+article p {
+    position: absolute;
+    top: 80px;
+}
+/*
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
@@ -55,4 +103,8 @@ nav a:link, nav a:visited{
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+*/
+footer nav a {
+    text-decoration: none;
 }
