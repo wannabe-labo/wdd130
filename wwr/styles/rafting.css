@@ -60,9 +60,10 @@ header nav a {
 /*hero*/
 .hero {
     position: relative;
+    text-align: center;
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -71,58 +72,72 @@ header nav a {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 300px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
 }
 
-.hero article img {
+.hero article {
     position: absolute;
-    top: 150px;
-    right: 0px;
-    padding: 20px;
-    width: 30%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    float: right;
-}
-.hero article p {
-    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    bottom: 100px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
 }
 
-.section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.hero article img {
+    float: right;
+    margin-left: 10px;
 }
-    
-    
-/*
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+/* section */
+section:nth-child(4) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
 }
 
-nav a {
-    display: block;
-    color: var(--nav-hover-link-color);
-    text-decoration: none;
-    padding: 1rem;
+section:nth-child(4) img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-nav a:link, nav a:visited{
-    color: var(--nav-link-color);
+section:nth-child(4) figcaption {
+    text-align: center;
+    margin-top: 5px;
+    flex-basis: 30%;
 }
 
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
-*/
+/*footer*/
 footer {
-    
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.sociallinks a {
+    text-decoration: none;
 }
